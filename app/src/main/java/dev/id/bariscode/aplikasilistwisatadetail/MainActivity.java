@@ -105,6 +105,8 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("Kirim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+
+                        //Tambah Intent Put Extra Bundle
                         KirimtoDetailActivity(namatempatWisata, lokasitempatWisata, desktempatWisata);
                     }
                 })
