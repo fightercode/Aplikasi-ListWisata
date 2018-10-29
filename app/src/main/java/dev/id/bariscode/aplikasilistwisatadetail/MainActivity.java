@@ -91,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void AlertDialogData(
-            String namatempatWisata,
-            String lokasitempatWisata,
-            String desktempatWisata,
+            final String namatempatWisata,
+            final String lokasitempatWisata,
+            final String desktempatWisata,
             Integer gambartempatWisata) {
 
         builder = new AlertDialog.Builder(MainActivity.this);
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("Kirim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
+                        KirimtoDetailActivity(namatempatWisata, lokasitempatWisata, desktempatWisata);
                     }
                 })
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
