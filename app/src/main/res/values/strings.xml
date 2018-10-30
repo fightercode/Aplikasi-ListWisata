@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Aplikasi List Wisata + Detail</string>
+
+    <string name="deskripsi">Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.</string>
+    <string name="lokasi">Jl. Badrawati, Kw. Candi Borobudur, Borobudur, Magelang, Jawa Tengah</string>
+
+    <string name="pulau_komodo">Pulau Komodo adalah sebuah pulau yang terletak di Kepulauan Nusa Tenggara. Pulau Komodo dikenal sebagai habitat asli hewan komodo. Pulau ini juga merupakan kawasan Taman Nasional Komodo yang dikelola oleh Pemerintah Pusat. Pulau Komodo berada di sebelah timur Pulau Sumbawa, yang dipisahkan oleh Selat Sape.</string>
+    <string name="trio_gili">Kepulauan Gili atau Tiga Gili adalah kepulauan yang terdiri dari tiga pulau kecil atau pulau Gili kembar tiga — Gili Trawangan, Gili Meno, dan Gili Air — tepat di lepas pantai barat laut Lombok, Indonesia. Kepulauan ini merupakan destinasi wisata populer bagi wisatawan.</string>
+    <string name="raja_ampat">Kepulauan Raja Ampat merupakan rangkaian empat gugusan pulau yang berdekatan dan berlokasi di barat bagian Kepala Burung Pulau Papua. Secara administrasi, gugusan ini berada di bawah Kabupaten Raja Ampat, Provinsi Papua Barat.</string>
+    <string name="danau_sentani">Danau Sentani adalah danau yang terletak di Papua Indonesia. Danau Sentani berada di bawah lereng Pegunungan Cagar Alam Cyclops yang memiliki luas sekitar 245.000 hektar. Danau ini terbentang antara Kota Jayapura dan Kabupaten Jayapura, Papua.</string>
+    <string name="pulau_bali">Bali adalah sebuah provinsi di Indonesia. Ibu kota provinsi ini adalah Denpasar. Bali juga merupakan salah satu pulau di Kepulauan Nusa Tenggara.</string>
+    <string name="bunaken">Bunaken adalah sebuah pulau seluas 8,08 km² di Teluk Manado, yang terletak di utara pulau Sulawesi, Indonesia. Pulau ini merupakan bagian dari kota Manado, ibu kota provinsi Sulawesi Utara, Indonesia.</string>
+    <string name="jayawijaya">Pegunungan Jayawijaya adalah rangkaian pegunungan yang membujur di Provinsi Papua, Indonesia. Pegunungan Jayawijaya adalah rangkaian pegunungan tertinggi di Indonesia, dengan puncak tertingginya yaitu Puncak Jaya.</string>
+    <string name="tana_toraja">Kabupaten Tana Toraja adalah kabupaten di Provinsi Sulawesi Selatan, dengan bupati bernama Ir. Nico Biringkanae. Ibu kota kabupaten ini adalah Makale. Sebelum pemekaran, kabupaten ini memiliki luas wilayah 3.203 km² dan berpenduduk sebanyak 268.588 jiwa.</string>
+    <string name="borobudur">Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut <Yogyakarta class=""></Yogyakarta></string>
+    <string name="tmii">Taman Mini Indonesia Indah merupakan suatu kawasan taman wisata bertema budaya Indonesia di Jakarta Timur. Area seluas kurang lebih 150 hektare atau 1,5 kilometer persegi ini terletak pada koordinat 6°18′6.8″LS,106°53′47.2″BT.</string>
+
 </resources>

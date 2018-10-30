@@ -39,17 +39,18 @@ public class MainActivity extends AppCompatActivity {
             "Jakarta"
     };
 
-    String[] deskripsiTempatWisata = {
-            "Ini adalah Pulau Komodo",
-            "Ini adalah Pulau Trio Gili",
-            "Ini adalah Pulau Raja Ampat",
-            "Ini adalah Pulau Danau Sentani",
-            "Ini adalah Pulau Bali",
-            "Ini adalah Pulau Taman Laut Bunaken",
-            "Ini adalah Puncak Jayawijaya",
-            "Ini adalah Pulau Tana Toraja",
-            "Ini adalah Candi Borobudur",
-            "Ini adalah Taman Mini Indonesia Indah"
+    Integer[] deskripsiTempatWisata = {
+            R.string.pulau_komodo,
+            R.string.trio_gili,
+            R.string.raja_ampat,
+            R.string.danau_sentani,
+            R.string.pulau_bali,
+            R.string.bunaken,
+            R.string.jayawijaya,
+            R.string.tana_toraja,
+            R.string.borobudur,
+            R.string.tmii
+
     };
 
     Integer[] gambarTempatWisata = {
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setTitle("List Tempat Wisata");
+
         AdapterListWisata listWisataAdapter = new AdapterListWisata(
                 this,
                 namaTempatWisata,
@@ -93,21 +96,20 @@ public class MainActivity extends AppCompatActivity {
     public void AlertDialogData(
             final String namatempatWisata,
             final String lokasitempatWisata,
-            final String desktempatWisata,
-            Integer gambartempatWisata) {
+            final Integer desktempatWisata,
+            final Integer gambartempatWisata) {
 
         builder = new AlertDialog.Builder(MainActivity.this);
         builder
                 .setTitle("Info Tempat Wisata")
                 .setMessage("Nama Pemain : " + namatempatWisata + "\n" +
                         "Tim Besutan : " + lokasitempatWisata + "\n" +
-                        "Deskripsi Pemain : " + desktempatWisata)
+                        "Deskripsi Pemain : " + desktempatWisata + "\n" +
+                        "Gambar Resource : " + gambartempatWisata)
                 .setPositiveButton("Kirim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
-                        //Tambah Intent Put Extra Bundle
-                        KirimtoDetailActivity(namatempatWisata, lokasitempatWisata, desktempatWisata);
+                        KirimtoDetailActivity(namatempatWisata, lokasitempatWisata, desktempatWisata, gambartempatWisata);
                     }
                 })
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -119,15 +121,17 @@ public class MainActivity extends AppCompatActivity {
         builder.create().show();
     }
 
-    public void KirimtoDetailActivity(String namawisata, String lokasiwisata, String deksripsiwisata) {
+    public void KirimtoDetailActivity(String namawisata, String lokasiwisata, Integer deksripsiwisata, Integer picTempatWisata) {
         Bundle paketData = new Bundle();
         paketData.putString("NAMA_TEMPATWISATA", namawisata);
         paketData.putString("LOKASI_TEMPATWISATA", lokasiwisata);
-        paketData.putString("DESKRIPSI_TEMPATWISATA", deksripsiwisata);
+        paketData.putInt("DESKRIPSI_TEMPATWISATA", deksripsiwisata);
+        paketData.putInt("GMBR_WISATA", picTempatWisata);
 
-        Intent prosesKirim = new Intent(MainActivity.this, DetailActivity.class);
+        Intent prosesKirim = new Intent(MainActivity.this, DetailWisataActivity.class);
         prosesKirim.putExtras(paketData);
         startActivity(prosesKirim);
+        finish();
         return;
     }
 }

@@ -17,14 +17,14 @@ public class AdapterListWisata extends ArrayAdapter<String> {
     private final Activity context;
     private final String[] namaTempatWisata;
     private final String[] lokasiTempatWisata;
-    private final String[] deskripsiTempatWisata;
+    private final Integer[] deskripsiTempatWisata;
     private final Integer[] gambarTempatWisata;
 
     public AdapterListWisata(
             Activity context,
             String[] namaTempatWisata,
             String[] lokasiTempatWisata,
-            String[] deskripsiTempatWisata,
+            Integer[] deskripsiTempatWisata,
             Integer[] gambarTempatWisata) {
         super(context, R.layout.item_wisata, namaTempatWisata);
 

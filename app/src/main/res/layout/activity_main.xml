@@ -5,9 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomeActivity">
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="5dp"
+    tools:context=".MainActivity">
 
     <ListView
+        android:scrollbars="none"
         android:id="@+id/listDaftarWisata"
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>
